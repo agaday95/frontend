@@ -386,22 +386,22 @@
             .header-left {
         
                 img {
-                    margin-top: 12px;
-                    margin-left: 35px;
-                    width: 55%;
+                    margin-top: 25px;
+                    margin-left: 25px;
+                    width: 65%;
                 }
             }
         
             .header-right {
-                padding: 27px 35px 0 0;
+                padding: 36px 25px 0 0;
         
                 .shopping-cart {
-                    font-size: 15px;
-                    margin-right: 21px;
+                    font-size: 18px;
+                    margin-right: 22px;
                 }
         
                 .menu-cart {
-                    font-size: 15px;
+                    font-size: 18px;
                 }
             }
         }
@@ -492,22 +492,22 @@
             .header-left {
         
                 img {
-                    margin-top: 10px;
+                    margin-top: 15px;
                     margin-left: 15px;
-                    width: 50%;
+                    width: 60%;
                 }
             }
         
             .header-right {
-                padding: 17px 15px 0 0;
+                padding: 27px 15px 0 0;
         
                 .shopping-cart {
-                    font-size: 11px;
-                    margin-right: 12px;
+                    font-size: 15px;
+                    margin-right: 14px;
                 }
         
                 .menu-cart {
-                    font-size: 11px;
+                    font-size: 15px;
                 }
             }
         }
@@ -541,15 +541,122 @@
         }
 
         .header-menu {
-            top: calc(30% + 20px);
+            top: calc(30% + 23px);
             right: calc(10% - 20px);
     
             li {
     
                 a {
-                    font-size: 14px;
+                    font-size: 12px;
                     letter-spacing: 1px;
-                    line-height: 25px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+
+    .header-bot {
+       
+        .menu-bot {
+            height: 52px;
+    
+            .menu-col {
+    
+                .menu-col-title {
+                    line-height: 12px;
+                    font-size: 11px;
+                    letter-spacing: 1px;
+                    margin-top: 16px;
+                }
+    
+                .menu-col-note {
+                    line-height: 14px;
+                    font-size: 9px;
+                    margin-top: -13px;
+                    margin-bottom: 0;
+                }
+            }
+    
+            .menu-col:nth-child(2) {
+                transform: translate(0, 0);
+            }
+    
+            .menu-col:nth-child(3) {
+                transform: translate(0, 0);
+            }
+        }
+    }
+}
+
+@media (min-width: 380px) and (max-width: 575px) {
+    .header-top {
+        height: 450px;
+        background-position: 70% 0;
+
+        .header-bar {
+
+            .header-left {
+        
+                img {
+                    margin-top: 8px;
+                    margin-left: 10px;
+                    width: 50%;
+                }
+            }
+        
+            .header-right {
+                padding: 11px 10px 0 0;
+        
+                .shopping-cart {
+                    font-size: 13px;
+                    margin-right: 11px;
+                }
+        
+                .menu-cart {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .header-banner {
+            top: calc(25% + -40px);
+            left: calc(0% - 27px);
+            transform: translate(25%, 75%);
+
+            .banner-title {
+                font-size: 6px;
+                letter-spacing: 3px;
+                line-height: 8px;
+                margin-bottom: 6px;
+            }
+        
+            .banner-content {
+                width: 220px;
+                font-size: 22px;
+                letter-spacing: 6px;
+                line-height: 24px;
+                margin-bottom: 6px;
+            }
+            
+            a {
+                font-size: 6px;
+                letter-spacing: 1px;
+                line-height: 9px;
+                padding: 6px 11px;
+            }
+        }
+
+        .header-menu {
+            top: calc(50% + -25px);
+            right: calc(100% - 55px);
+            text-align: left;
+            
+            li {
+    
+                a {
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    line-height: 22px;
                 }
             }
         }
