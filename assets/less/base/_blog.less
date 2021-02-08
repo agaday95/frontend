@@ -1,0 +1,125 @@
+.blog {
+    background-color: #faf9f9;
+    padding-bottom: 102px;
+
+    &-title {
+        margin-bottom: 78px;
+        
+        h2 {
+            font-size: 56px;
+            line-height: 28px;
+            color: #333;
+            font-weight: 700;
+            font-family: "Cormorant Garamond";
+            text-align: center;
+            transform: translate(0px, -23px);
+        }
+    }
+
+    &-content {
+        margin-bottom: 66px;
+        .card {
+            border-width: 0;
+
+            &-body {
+                padding-left: 32px;
+                padding-right: 38px;
+                padding-bottom: 15px;
+
+                .card-date {
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    line-height: 24px;
+                    color: #ccc;
+                    font-weight: 400;
+                    font-family: "Fira Sans";
+                    padding-top: 4px;
+                    margin-bottom: 18px;
+                    text-transform: uppercase;
+                    letter-spacing: 1.5px;
+                }
+
+                .card-title {
+                    position: relative;
+                    width: 298px;
+                    height: 91px;
+                    font-size: 24px;
+                    letter-spacing: 1.2px;
+                    line-height: 32px;
+                    color: #333;
+                    font-weight: 700;
+                    font-family: "Cormorant Garamond";
+
+                    &:hover {
+                        color: @hover-color;
+                    }
+                    
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        border-bottom: 1px solid #eeeeee;
+                        height: 113px;
+                        width: 309px;
+
+                    }
+                }
+                
+                .card-icon {
+                    margin-top: 60px;
+
+                    a {
+                        text-decoration: none;
+                        padding-right: 24px;
+
+                        i {
+                            font-size: 16px;
+                            line-height: 32px;
+                            color: #92c5d9;
+                            padding-right: 8px;
+                        }
+
+                        span {
+                            font-size: 14px;
+                            line-height: 32px;
+                            color: #696969;
+                            font-weight: 400;
+                            font-family: "Fira Sans";
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-go {
+        text-align: center;
+
+        a {
+            display: inline-block;
+            font-size: 24px;
+            line-height: 28px;
+            color: #333;
+            font-weight: 400;
+            font-family: "Cormorant Garamond";
+            text-decoration: none;
+            position: relative;
+            z-index: 0;
+
+            &:hover {
+                color: @hover-color;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                border: 1px solid #fff;
+                width: 145px;
+                height: 17px;
+                top: 15px;
+                left: -24px;
+                background-color: #fff;
+                z-index: -1;
+            }
+        }
+    }
+}

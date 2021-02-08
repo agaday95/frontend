@@ -1,0 +1,141 @@
+.product-items {
+    margin-bottom: 86px;
+    .items-title {
+        margin-bottom: 82px;
+
+        h2 {
+            font-size: 56px;
+            line-height: 28px;
+            color: #333;
+            font-weight: 700;
+            font-family: "Cormorant Garamond";
+            padding-top: 11px;
+        }
+
+        a {
+            float: right;
+            font-size: 14px;
+            letter-spacing: 2px;
+            line-height: 24px;
+            color: #333;
+            font-weight: 700;
+            font-family: "Fira Sans";
+            transform: translate(-9px, -19px);
+            text-transform: uppercase;
+            text-decoration: none;
+
+            &:hover {
+                color: @hover-color;
+            }
+
+            i {
+                margin-left: 11px;
+                color: @hover-color;
+            }
+        }
+    }
+    
+    .items-top {
+        margin-bottom: -13px;
+    }
+
+    .items-content {
+
+        .items-card {
+
+            .card-img {
+                position: relative;
+
+                .carousel-control-prev,
+                .carousel-control-next {
+                    visibility: hidden;
+                    z-index: 1;
+                    filter: invert(100%);
+                }
+
+                &:hover {
+                    .card-img-tool {
+                        visibility: visible;
+                    }
+
+                    .carousel-control-prev,
+                    .carousel-control-next {
+                        visibility: visible;
+                    }
+                }
+
+                &-tool {
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    height: 40px;
+                    display: flex;
+                    text-align: center;
+                    z-index: 2;
+                    visibility: hidden;
+
+                    button {
+                        flex: 1;
+                        background-color: #d6ba8d;
+                        font-size: 14px;
+                        letter-spacing: 1px;
+                        color: #ffffff;
+                        font-weight: 700;
+                        font-family: "Fira Sans";
+                        text-transform: uppercase;
+
+                        &:hover {
+                            color: #333;
+                        }
+                    }
+
+                    a {
+                        width: 14.8%;
+                        background-color: #595959;
+                        font-size: 18px;
+                        letter-spacing: 2px;
+                        color: #ccc;
+                        border-left: 1px solid #fff;
+
+                        &:hover {
+                            color: @hover-color;
+                        }
+                    }
+                }
+            }
+            
+
+            .card-body {
+                padding-top: 8px;
+
+                .card-text {
+                    font-size: 14px;
+                    letter-spacing: 0.7px;
+                    line-height: 36px;
+                    color: #333;
+                    font-weight: 400;
+                    font-family: "Fira Sans";
+                    text-align: center;
+                    display: inline-block;
+                    width: 100%;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: @hover-color;
+                    }
+                }
+
+                .card-price {
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    line-height: 36px;
+                    color: #d6ba8d;
+                    font-weight: 700;
+                    font-family: "Cormorant Garamond";
+                    text-align: center;
+                    margin-top: -13px;
+                }
+            }
+        }
+    }
+}
