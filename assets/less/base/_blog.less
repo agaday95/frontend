@@ -18,6 +18,7 @@
 
     &-content {
         margin-bottom: 66px;
+
         .card {
             border-width: 0;
 
@@ -28,7 +29,6 @@
 
                 .card-date {
                     font-size: 14px;
-                    letter-spacing: 1px;
                     line-height: 24px;
                     color: #ccc;
                     font-weight: 400;
@@ -41,8 +41,6 @@
 
                 .card-title {
                     position: relative;
-                    width: 298px;
-                    height: 91px;
                     font-size: 24px;
                     letter-spacing: 1.2px;
                     line-height: 32px;
@@ -122,4 +120,247 @@
             }
         }
     }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .blog {
+        padding-bottom: 85px;
+
+        &-title {
+            margin-bottom: 60px;
+            
+            h2 {
+                font-size: 48px;
+                line-height: 28px;
+                transform: translate(0px, -21px);
+            }
+        }
+
+        &-content {
+            margin-bottom: 60px;
+
+            .card {
+    
+                &-body {
+                    padding: 15px;
+    
+                    .card-date {
+                        font-size: 12px;
+                        letter-spacing: 1px;
+                        line-height: 20px;
+                        padding-top: 0;
+                        margin-bottom: 15px;
+                    }
+    
+                    .card-title {
+                        font-size: 20px;
+                        letter-spacing: 1.3px;
+                        line-height: 26px;
+
+                        &::before {
+                            height: 90px;
+                            width: 260px;
+                        }
+                    }
+                    
+                    .card-icon {
+                        margin-top: 50px;
+    
+                        a {
+                            padding-right: 20px;
+    
+                            i {
+                                font-size: 14px;
+                                line-height: 30px;
+                            }
+    
+                            span {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &-go {
+    
+            a {
+                font-size: 22px;
+    
+                &::before {
+                    width: 139px;
+                    height: 16px;
+                    top: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .blog {
+        padding-bottom: 60px;
+
+        &-title {
+            margin-bottom: 50px;
+            
+            h2 {
+                font-size: 45px;
+                line-height: 28px;
+                transform: translate(0px, -20px);
+            }
+        }
+
+        &-content {
+            margin-bottom: 45px;
+
+            .card {
+    
+                &-body {
+                    padding: 10px;
+    
+                    .card-date {
+                        font-size: 11px;
+                        letter-spacing: 1px;
+                        line-height: 18px;
+                        padding-top: 0;
+                        margin-bottom: 10px;
+                    }
+    
+                    .card-title {
+                        font-size: 15px;
+                        letter-spacing: 1px;
+                        line-height: 22px;
+
+                        &::before {
+                            height: 64px;
+                            width: 190px;
+                        }
+                    }
+                    
+                    .card-icon {
+                        margin-top: 24px;
+    
+                        a {
+                            padding-right: 16px;
+    
+                            i {
+                                font-size: 10px;
+                                line-height: 24px;
+                                padding-right: 6px;
+                            }
+    
+                            span {
+                                font-size: 10px;
+                                margin-right: -4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &-go {
+    
+            a {
+                font-size: 18px;
+    
+                &::before {
+                    width: 117px;
+                    height: 15px;
+                    top: 15px;
+                    left: -20px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .blog {
+        padding-bottom: 60px;
+
+        &-title {
+            margin-bottom: 45px;
+            
+            h2 {
+                font-size: 35px;
+                line-height: 28px;
+                transform: translate(0px, -19px);
+            }
+        }
+
+        &-content {
+            margin-bottom: 10px;
+
+            .col-sm-12 {
+                max-width: 80%;
+                margin: auto;
+                margin-bottom: 30px;
+
+                .card {
+    
+                    &-body {
+                        padding: 25px;
+        
+                        .card-date {
+                            font-size: 13px;
+                            letter-spacing: 1px;
+                            line-height: 20px;
+                            padding-top: 0;
+                            margin-bottom: 15px;
+                        }
+        
+                        .card-title {
+                            font-size: 25px;
+                            letter-spacing: 3px;
+                            line-height: 30px;
+    
+                            &::before {
+                                height: 95px;
+                                width: 350px;
+                            }
+                        }
+                        
+                        .card-icon {
+                            margin-top: 45px;
+        
+                            a {
+                                padding-right: 30px;
+        
+                                i {
+                                    font-size: 14px;
+                                    line-height: 26px;
+                                    padding-right: 10px;
+                                }
+        
+                                span {
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &-go {
+    
+            a {
+                font-size: 18px;
+    
+                &::before {
+                    width: 117px;
+                    height: 15px;
+                    top: 15px;
+                    left: -20px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 380px) and (max-width: 575px) {
+  
 }
