@@ -24,7 +24,7 @@
 
             &-body {
                 padding-left: 32px;
-                padding-right: 38px;
+                padding-right: 37px;
                 padding-bottom: 15px;
 
                 .card-date {
@@ -42,7 +42,7 @@
                 .card-title {
                     position: relative;
                     font-size: 24px;
-                    letter-spacing: 1.2px;
+                    letter-spacing: 1.16px;
                     line-height: 32px;
                     color: #333;
                     font-weight: 700;
@@ -51,29 +51,22 @@
                     &:hover {
                         color: @hover-color;
                     }
-                    
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        border-bottom: 1px solid #eeeeee;
-                        height: 113px;
-                        width: 309px;
-
-                    }
                 }
                 
                 .card-icon {
-                    margin-top: 60px;
+                    margin-top: 49px;
+                    border-top: 1px solid #eee;
+                    padding-top: 12px;
 
                     a {
                         text-decoration: none;
                         padding-right: 24px;
 
                         i {
-                            font-size: 16px;
+                            font-size: 11px;
                             line-height: 32px;
                             color: #92c5d9;
-                            padding-right: 8px;
+                            padding-right: 13px;
                         }
 
                         span {
@@ -100,6 +93,7 @@
             font-weight: 400;
             font-family: "Cormorant Garamond";
             text-decoration: none;
+            transform: translateX(-2px);
             position: relative;
             z-index: 0;
 
@@ -156,22 +150,19 @@
                         font-size: 20px;
                         letter-spacing: 1.3px;
                         line-height: 26px;
-
-                        &::before {
-                            height: 90px;
-                            width: 260px;
-                        }
                     }
                     
                     .card-icon {
-                        margin-top: 50px;
+                        margin-top: 44px;
+                        padding-top: 8px;
     
                         a {
                             padding-right: 20px;
     
                             i {
-                                font-size: 14px;
+                                font-size: 10px;
                                 line-height: 30px;
+                                padding-right: 11px;
                             }
     
                             span {
@@ -232,21 +223,17 @@
                         font-size: 15px;
                         letter-spacing: 1px;
                         line-height: 22px;
-
-                        &::before {
-                            height: 64px;
-                            width: 190px;
-                        }
                     }
                     
                     .card-icon {
-                        margin-top: 24px;
+                        margin-top: 22px;
+                        padding-top: 2px;
     
                         a {
                             padding-right: 16px;
     
                             i {
-                                font-size: 10px;
+                                font-size: 8px;
                                 line-height: 24px;
                                 padding-right: 6px;
                             }
@@ -316,27 +303,23 @@
                             font-size: 25px;
                             letter-spacing: 3px;
                             line-height: 30px;
-    
-                            &::before {
-                                height: 95px;
-                                width: 350px;
-                            }
                         }
                         
                         .card-icon {
-                            margin-top: 45px;
+                            margin-top: 40px;
+                            padding-top: 8px;
         
                             a {
-                                padding-right: 30px;
+                                padding-right: 35px;
         
                                 i {
-                                    font-size: 14px;
+                                    font-size: 10px;
                                     line-height: 26px;
                                     padding-right: 10px;
                                 }
         
                                 span {
-                                    font-size: 13px;
+                                    font-size: 14px;
                                 }
                             }
                         }
@@ -362,5 +345,21 @@
 }
 
 @media (min-width: 380px) and (max-width: 575px) {
-  
+    .blog {
+        padding-bottom: 60px;
+
+        &-title {
+            margin-bottom: 45px;
+
+            h2 {
+                font-size: 45px;
+                line-height: 28px;
+                transform: translate(0px, -21px);
+            }
+        }
+
+        &-content {
+            margin-bottom: 40px;
+        }
+    }
 }
