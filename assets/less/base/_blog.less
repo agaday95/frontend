@@ -22,6 +22,14 @@
         .card {
             border-width: 0;
 
+            a {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
             &-body {
                 padding-left: 32px;
                 padding-right: 37px;
@@ -60,22 +68,22 @@
 
                     a {
                         text-decoration: none;
-                        padding-right: 24px;
+                        padding-right: 13px;
 
                         i {
                             font-size: 11px;
                             line-height: 32px;
                             color: #92c5d9;
-                            padding-right: 13px;
                         }
+                    }
 
-                        span {
-                            font-size: 14px;
-                            line-height: 32px;
-                            color: #696969;
-                            font-weight: 400;
-                            font-family: "Fira Sans";
-                        }
+                    span {
+                        font-size: 14px;
+                        line-height: 32px;
+                        color: #696969;
+                        font-weight: 400;
+                        font-family: "Fira Sans";
+                        padding-right: 24px;
                     }
                 }
             }
@@ -157,17 +165,17 @@
                         padding-top: 8px;
     
                         a {
-                            padding-right: 20px;
+                            padding-right: 14px;
     
                             i {
                                 font-size: 10px;
                                 line-height: 30px;
-                                padding-right: 11px;
-                            }
-    
-                            span {
-                                font-size: 12px;
-                            }
+                            }               
+                        }
+
+                        span {
+                            font-size: 12px;
+                            padding-right: 22px;
                         }
                     }
                 }
@@ -230,18 +238,17 @@
                         padding-top: 2px;
     
                         a {
-                            padding-right: 16px;
+                            padding-right: 9px;
     
                             i {
                                 font-size: 8px;
                                 line-height: 24px;
-                                padding-right: 6px;
-                            }
-    
-                            span {
-                                font-size: 10px;
-                                margin-right: -4px;
-                            }
+                            }                             
+                        }
+
+                        span {
+                            font-size: 10px;
+                            padding-right: 15px;
                         }
                     }
                 }
@@ -310,17 +317,17 @@
                             padding-top: 8px;
         
                             a {
-                                padding-right: 35px;
+                                padding-right: 14px;
         
                                 i {
                                     font-size: 10px;
                                     line-height: 26px;
-                                    padding-right: 10px;
-                                }
-        
-                                span {
-                                    font-size: 14px;
-                                }
+                                }       
+                            }
+
+                            span {
+                                font-size: 14px;
+                                padding-right: 30px;
                             }
                         }
                     }
@@ -359,7 +366,11 @@
         }
 
         &-content {
-            margin-bottom: 40px;
+            margin-bottom: 10px;
+
+            .card {
+                margin-bottom: 30px;
+            }
         }
     }
 }
