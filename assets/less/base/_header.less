@@ -13,7 +13,7 @@
             float: left;
     
             img {
-                margin-top: 30px;
+                margin-top: 29px;
                 margin-left: 100px;
             }
         }
@@ -27,6 +27,7 @@
             .shopping-cart {
                 font-size: 25px;
                 margin-right: 42px;
+                position: relative;
     
                 &:hover {
                     color: #333;
@@ -48,7 +49,7 @@
     }
 
     .header-banner {
-        transform: translate(0%, calc(75% - 34px));
+        transform: translate(0%, calc(75% - 33px));
 
         .banner-title {
             font-size: 24px;
@@ -153,13 +154,17 @@
             }
         }
 
+        .menu-col:nth-child(1) {
+            transform: translate(1px, -1px);
+        }
+
         .menu-col:nth-child(2) {
             transform: translate(2px, -2px);
         }
 
         .menu-col:nth-child(3) {
             border-right: 1px solid #efefef;
-            transform: translate(-11px, -1px);
+            transform: translate(-13px, -1px);
         }
     }
 }
