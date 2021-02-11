@@ -209,32 +209,37 @@
                 order: 2;
                 flex: 1;
                 text-align: center;
+                position: absolute;
+                transform: translate(100%, -32%);
+                left: calc(10% + 5px);
+                width: auto;
 
                 img {
-                    width: 37%;
+                    width: 85%;
                 }
             }
 
             .footer-menu {
                 order: 1;
                 flex: none;
-                width: 20%;
-                transform: translateY(28px);
+                width: 100%;
+                transform: translateY(17px);
                 font-size: 13px;
                 padding-left: 0;
+                padding-right: 0;
 
                 .navbar-collapse {
-                    transition: (0.3s);
+                    transition: (0.7s);
 
                     .navbar-nav {
                         transform: translate(0, 30px);
                         background-color: #fff;
-                        width: 690px;
     
                         .nav-item {
     
                             .nav-link {
                                 padding: 12px;
+                                line-height: 20px;
                             }
                         }
                     }
@@ -243,7 +248,9 @@
 
             .footer-sub {
                 order: 3;
-                transform: translateY(61px);
+                transform: translateY(30px);
+                position: absolute;
+                right: 0;
 
                 a {
                     font-size: 12px;
@@ -283,49 +290,47 @@
 
 @media (min-width: 576px) and (max-width: 767px) {
     .footer {
-        padding-bottom: 40px;
+        padding-bottom: 30px;
 
         &-top {
+            margin-top: 60px;
+            margin-bottom: 60px;
 
             .footer-logo {
                 order: 2;
                 flex: 1;
                 text-align: center;
+                position: absolute;
+                transform: translate(100%, -32%);
+                left: calc(0% - 17px);
+                width: auto;
 
                 img {
-                    width: 37%;
+                    width: 80%;
                 }
             }
 
             .footer-menu {
                 order: 1;
                 flex: none;
-                width: 25%;
-                transform: translateY(10px);
-                font-size: 11px;
+                width: 100%;
+                transform: translateY(17px);
+                font-size: 13px;
                 padding-left: 0;
-                line-height: 16px;
-
-                .navbar-toggler {
-
-                    .navbar-toggler-icon {
-                        width: 1.2em;
-                        height: 1.2em;
-                    }
-                }
+                padding-right: 0;
 
                 .navbar-collapse {
-                    transition: (0.3s);
-                    
+                    transition: (0.7s);
+
                     .navbar-nav {
-                        transform: translate(0, 15px);
+                        transform: translate(0, 30px);
                         background-color: #fff;
-                        width: 510px;
     
                         .nav-item {
     
                             .nav-link {
-                                padding: 12px;
+                                padding: 10px;
+                                line-height: 20px;
                             }
                         }
                     }
@@ -334,8 +339,9 @@
 
             .footer-sub {
                 order: 3;
-                transform: translateY(28px);
-                width: 25%;
+                transform: translateY(30px);
+                position: absolute;
+                right: 0;
 
                 a {
                     font-size: 9px;
@@ -356,6 +362,7 @@
             .footer-contact {
                 order: 2;
                 margin-top: 0;
+                text-align: center;
 
                 .footer-note {
                     font-size: 11px;
@@ -364,7 +371,7 @@
             }
 
             .footer-icon {
-                text-align: left;
+                text-align: center;
 
                 a {
                     width: 32px;
@@ -378,7 +385,7 @@
     }
 }
 
-@media (min-width: 380px) and (max-width: 575px) {
+@media (max-width: 575px) {
     .footer {
         padding-bottom: 30px;
 
@@ -455,6 +462,7 @@
             padding-top: 15px;
 
             .footer-contact {
+                text-align: center;
                 order: 2;
                 margin-top: 0;
 
@@ -465,7 +473,7 @@
             }
 
             .footer-icon {
-                text-align: left;
+                text-align: center;
 
                 a {
                     border: 1px solid #696969;
