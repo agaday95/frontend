@@ -20,7 +20,7 @@
             color: @color-333;
             font-weight: 700;
             font-family: 'Fira Sans';
-            transform: translate(-9px, -19px);
+            .transform(-9px, -19px);
             text-transform: uppercase;
             text-decoration: none;
 
@@ -57,7 +57,7 @@
                     .card-img-tool {
                         visibility: visible;
                         opacity: 1;
-                        transition: all 0.5s ease-in-out;
+                        .transitionEase (0.5s);
                     }
 
                     .carousel-control-prev,
@@ -76,7 +76,7 @@
                     text-align: center;
                     z-index: 2;
                     visibility: hidden;
-                    transition: all 0.5s ease-in-out;
+                    .transitionEase (0.5s);
 
 
                     button {
@@ -171,16 +171,16 @@
             margin-bottom: 75px;
     
             h2 {
-                font-size: 45px;
+                font-size: 46px;
                 line-height: 26px;
             }
     
             a {
-                font-size: 11px;
+                font-size: 12px;
                 line-height: 22px;
 
                 i {
-                    margin-left: 9px;
+                    margin-left: 8px;
                 }
             }
         }
@@ -192,13 +192,11 @@
                 .card-body {
 
                     .card-text {
-                        font-size: 10px;
-                        line-height: 30px;
+ 
                     }
 
                     .card-price {
-                        font-size: 13px;
-                        line-height: 30px;
+
                     }
                 }
             }
@@ -262,7 +260,7 @@
             a {
                 font-size: 9px;
                 line-height: 20px;
-                transform: translate(-5px, -19px);
+                .transform(-5px, -19px);
 
                 i {
                     margin-left: 5px;
@@ -309,7 +307,7 @@
             a {
                 font-size: 9px;
                 line-height: 20px;
-                transform: translate(-5px, -19px);
+                .transform(-5px, -19px);
 
                 i {
                     margin-left: 5px;

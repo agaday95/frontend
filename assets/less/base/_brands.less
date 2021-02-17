@@ -6,25 +6,71 @@
         align-items: center;
 
         .brands-one {
-            transform: translate(-3px, -4px);
+            .transform(-3px, -4px);
+            opacity: 0.3;
+
+            &:hover {
+                opacity: 1;
+            }
         }
 
         .brands-two {
-            transform: translate(1px, 4px);
+            .transform(1px, 4px);
+            opacity: 0.3;
+
+            &:hover {
+                opacity: 1;
+            }
         }
 
         .brands-three {
-            transform: translate(0, 1px);
+            .transform(0, 1px);
+            opacity: 0.3;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .brands-four {
+            opacity: 0.3;
+
+            &:hover {
+                opacity: 1;
+            }
         }
 
         .brands-five {
-            transform: translate(1px, 1px);
+            .transform(1px, 1px);
+            opacity: 0.3;
+
+            &:hover {
+                opacity: 1;
+            }
         }
 
         .brands-six {
-            transform: translate(-1px, 11px);
+            .transform(-1px, 11px);
+            opacity: 0.3;
+
+            &:hover {
+                opacity: 1;
+            }
         }
     }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .brands {
+
+        &-row {
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

@@ -6,6 +6,7 @@
     width: 100%;
     height: 1000px;
     position: relative;
+    overflow: hidden;
     
     .header-bar {
 
@@ -65,7 +66,7 @@
     }
 
     .header-banner {
-        transform: translate(0%, calc(75% - 33px));
+        .transform(0%, calc(75% - 33px));
 
         .banner-title {
             font-size: 24px;
@@ -114,7 +115,7 @@
         position: absolute;
         top: calc(30% + 3px);
         right: calc(10% - 34px);
-        transform: translate(50%, 75%);
+        .transform(50%, 75%);
         list-style: none;
         text-align: right;
 
@@ -122,15 +123,32 @@
             text-decoration: none;
 
             a {
+                text-decoration: none;
                 font-size: 24px;
                 letter-spacing: 2px;
                 line-height: 40px;
-                color: @color-fff;
+                color: @color-eee;
                 font-weight: 500;
                 font-family: 'Cormorant Garamond';
 
+                &::before {
+                    content: '';
+                    position: absolute;
+                    border-bottom: 1px solid @color-333;
+                    width: 80px;
+                    right: -300%;
+                    .transformY (20px);
+                    opacity: 0;
+                    .transition (0.5s) ;
+                }
+
                 &:hover {
-                    color: @color-333;
+                    color: @color-fff;
+
+                    &::before {
+                        opacity: 1;
+                        right: -91%;
+                    }
                 }
             }
         }
@@ -171,17 +189,17 @@
         }
 
         .menu-col:nth-child(1) {
-            transform: translate(1px, -2px);
+            .transform(1px, -2px);
         }
 
         .menu-col:nth-child(2) {
-            transform: translate(2px, -2px);
+            .transform(2px, -2px);
 
         }
 
         .menu-col:nth-child(3) {
             border-right: 1px solid @color-efefef;
-            transform: translate(-13px, -2px);
+            .transform(-13px, -2px);
         }
     }
 }
@@ -250,7 +268,8 @@
         }
 
         .header-menu {
-            top: calc(25% + 0);
+            top: calc(25%);
+            right: calc(10% - 20px);
     
             li {
     
@@ -258,6 +277,10 @@
                     font-size: 20px;
                     letter-spacing: 2px;
                     line-height: 34px;
+
+                    &::before {
+                        .transformY (18px);
+                    }
                 }
             }
         }
@@ -290,11 +313,11 @@
             }
     
             .menu-col:nth-child(2) {
-                transform: translate(0, 0);
+                .transform(0, 0);
             }
     
             .menu-col:nth-child(3) {
-                transform: translate(0, 0);
+                .transform(0, 0);
                 border-right: none;
             }
         }
@@ -365,8 +388,8 @@
         }
 
         .header-menu {
-            top: calc(25% + 10px);
-            right: calc(10% - 35px);
+            top: calc(25%);
+            right: calc(10% - 15px);
     
             li {
     
@@ -374,6 +397,17 @@
                     font-size: 16px;
                     letter-spacing: 2px;
                     line-height: 29px;
+
+                    &::before {
+                        .transformY (15px);
+                    }
+
+                    &:hover {
+
+                        &::before {
+                            right: -105%;
+                        }
+                    }
                 }
             }
         }
@@ -411,11 +445,11 @@
                 }
         
                 .menu-col:nth-child(2) {
-                    transform: translate(0, 0);
+                    .transform(0, 0);
                 }
         
                 .menu-col:nth-child(3) {
-                    transform: translate(0, 0);
+                    .transform(0, 0);
                     border-right: none;
                 }
             }
@@ -433,9 +467,9 @@
             .header-left {
         
                 img {
-                    margin-top: 25px;
+                    margin-top: 23px;
                     margin-left: 25px;
-                    width: 65%;
+                    width: 70%;
                 }
             }
         
@@ -465,38 +499,49 @@
         .header-banner {
 
             .banner-title {
-                font-size: 12px;
+                font-size: 15px;
                 letter-spacing: 5px;
                 line-height: 21px;
-                margin-bottom: 11px;
+                margin-bottom: 13px;
             }
         
             .banner-content {
                 width: 470px;
-                font-size: 42px;
+                font-size: 49px;
                 letter-spacing: 15px;
-                line-height: 48px;
-                margin-bottom: 18px;
+                line-height: 50px;
+                margin-bottom: 21px;
             }
             
             a {
-                font-size: 9px;
+                font-size: 10px;
                 letter-spacing: 1px;
                 line-height: 10px;
-                padding: 8px 13px;
+                padding: 10px 20px;
             }
         }
 
         .header-menu {
             top: calc(25% - 10px);
-            right: calc(10% - 20px);
+            right: calc(10% + 15px);
     
             li {
     
                 a {
-                    font-size: 14px;
+                    font-size: 17px;
                     letter-spacing: 1px;
-                    line-height: 25px;
+                    line-height: 27px;
+
+                    &::before {
+                        .transformY (15px);
+                    }
+
+                    &:hover {
+
+                        &::before {
+                            right: -113%;
+                        }
+                    }
                 }
             }
         }
@@ -516,15 +561,15 @@
         
                     .menu-col-title {
                         line-height: 12px;
-                        font-size: 11px;
+                        font-size: 13px;
                         letter-spacing: 1px;
-                        margin-top: 16px;
+                        margin-top: 14px;
                     }
         
                     .menu-col-note {
                         line-height: 14px;
-                        font-size: 9px;
-                        margin-top: -13px;
+                        font-size: 10px;
+                        margin-top: -12px;
                         margin-bottom: 0;
                     }
                 }
@@ -534,11 +579,11 @@
                 }
         
                 .menu-col:nth-child(2) {
-                    transform: translate(0, 0);
+                    .transform(0, 0);
                 }
         
                 .menu-col:nth-child(3) {
-                    transform: translate(0, 0);
+                    .transform(0, 0);
                     border-right: none;
                 }
             }
@@ -613,7 +658,7 @@
 
         .header-menu {
             top: calc(25% - 40px);
-            right: calc(10% - 20px);
+            right: calc(10% + 15px);
     
             li {
     
@@ -621,6 +666,17 @@
                     font-size: 12px;
                     letter-spacing: 1px;
                     line-height: 22px;
+
+                    &::before {
+                        .transformY (13px);
+                    }
+
+                    &:hover {
+
+                        &::before {
+                            right: -150%;
+                        }
+                    }
                 }
             }
         }
@@ -640,14 +696,14 @@
         
                     .menu-col-title {
                         line-height: 8px;
-                        font-size: 8px;
+                        font-size: 9px;
                         letter-spacing: 1px;
                         margin-top: 11px;
                     }
         
                     .menu-col-note {
                         line-height: 13px;
-                        font-size: 7px;
+                        font-size: 8px;
                         margin-top: -15px;
                         margin-bottom: 0;
                     }
@@ -658,11 +714,11 @@
                 }
         
                 .menu-col:nth-child(2) {
-                    transform: translate(0, 0);
+                    .transform(0, 0);
                 }
         
                 .menu-col:nth-child(3) {
-                    transform: translate(0, 0);
+                    .transform(0, 0);
                     border-right: none;
                 }
             }
@@ -735,9 +791,11 @@
         }
 
         .header-menu {
-            top: calc(50% + -25px);
-            right: calc(100% - 55px);
+            top: calc(50% + 30px);
+            right: unset;
             text-align: left;
+            transform: none;
+            padding-left: 15px;
             
             li {
     
@@ -745,6 +803,20 @@
                     font-size: 12px;
                     letter-spacing: 1px;
                     line-height: 22px;
+                    .transition (0.5s);
+
+                    &::before {
+                        .transformY (14px);
+                        left: -300%;
+                    }
+
+                    &:hover {
+                        padding-left: 20px;
+
+                        &::before {
+                            left: -60%;
+                        }
+                    }
                 }
             }
         }
@@ -776,11 +848,11 @@
             }
     
             .menu-col:nth-child(2) {
-                transform: translate(0, 0);
+                .transform(0, 0);
             }
     
             .menu-col:nth-child(3) {
-                transform: translate(0, 0);
+                .transform(0, 0);
                 border-right: none;
             }
         }
