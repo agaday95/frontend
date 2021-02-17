@@ -12,7 +12,7 @@
             width: 830px;
             font-size: 34px;
             line-height: 48px;
-            color: #333;
+            color: @color-333;
             font-weight: 600;
             font-family: 'Cormorant Garamond';
             text-align: center;
@@ -49,23 +49,24 @@
         .box-product5 {
             position: absolute;
             width: 100%;
-            bottom: calc(0% + 12px);
+            bottom: calc(0% + 17px);
 
             &-title {
                 font-size: 24px;
                 letter-spacing: 1px;
                 line-height: 36px;
-                color: #333;
+                color: @color-333;
                 font-weight: 400;
                 font-family: 'Fira Sans';
                 text-align: center;
+                margin-bottom: 10px;
             }
     
             &-price {
-                font-size: 24px;
+                font-size: 23px;
                 letter-spacing: 0.6px;
                 line-height: 36px;
-                color: #d6ba8d;
+                color: @hover-color;
                 font-weight: 400;
                 font-family: 'Fira Sans';
                 text-align: center;
@@ -79,19 +80,20 @@
             right: calc(0% + 38px);
             width: 280px;
             height: 340px;
-            border: 5px solid #fff;
+            border: 5px solid @color-fff;
             z-index: 1;
 
             &-sale {
                 position: relative;
                 font-size: 18px;
-                letter-spacing: 3.8px;
+                letter-spacing: 3.6px;
                 line-height: 64px;
-                color: #333;
+                color: @color-333;
                 font-weight: 400;
                 font-family: 'Fira Sans';
                 text-align: center;
                 padding-top: 18px;
+                padding-left: 4px;
     
                 &::after {
                     content: '';
@@ -100,7 +102,7 @@
                     height: 340px;
                     border-style: solid;
                     border-width: 341px 0 0 280px;
-                    border-color: transparent transparent transparent #fff;
+                    border-color: transparent transparent transparent @color-fff;
                     left: -5px;
                     top: -5px;
                     z-index: -1;
@@ -110,7 +112,7 @@
             &-percent {
                 font-size: 100px;
                 line-height: 36px;
-                color: #333;
+                color: @color-333;
                 font-weight: 700;
                 font-family: 'Cormorant Garamond';
                 text-align: center;
@@ -120,7 +122,7 @@
             &-select {
                 font-size: 24px;
                 line-height: 64px;
-                color: #696969;
+                color: @color-696969;
                 font-weight: 700;
                 font-family: 'Cormorant Garamond';
                 text-align: center;
@@ -131,12 +133,13 @@
                 font-size: 14px;
                 letter-spacing: 3px;
                 line-height: 64px;
-                color: #696969;
+                color: @color-696969;
                 font-weight: 700;
                 font-family: 'Fira Sans';
                 text-align: center;
                 text-transform: uppercase;
                 padding-top: 7px;
+                padding-left: 3px;
                 text-decoration: none;
                 display: inline-block;
                 width: 100%;
@@ -156,7 +159,7 @@
                 font-size: 14px;
                 letter-spacing: 3px;
                 line-height: 24px;
-                color: #333;
+                color: @color-333;
                 font-weight: 400;
                 font-family: 'Fira Sans';
                 text-transform: uppercase;
@@ -166,7 +169,7 @@
             &-name {
                 font-size: 72px;
                 line-height: 47px;
-                color: #d6ba8d;
+                color: @hover-color;
                 font-weight: 700;
                 font-family: 'Cormorant Garamond';
                 text-align: center;
@@ -183,7 +186,7 @@
             &-name {
                 font-size: 48px;
                 line-height: 56px;
-                color: #333;
+                color: @color-333;
                 font-weight: 700;
                 font-family: 'Cormorant Garamond';
                 margin-top: 20px;
@@ -191,12 +194,12 @@
     
             &-size {
                 font-size: 14px;
-                letter-spacing: 0.8px;
+                letter-spacing: 0.7px;
                 line-height: 24px;
-                color: #696969;
+                color: @color-696969;
                 font-weight: 400;
                 font-family: 'Fira Sans';
-                transform: translateY(4px);
+                transform: translate(2px, 4px);
             }
         }     
     }
@@ -213,7 +216,7 @@
                 right: calc(0% + 14px);
                 width: 230px;
                 height: 280px;
-                border: 3px solid #fff;
+                border: 3px solid @color-fff;
 
                 &-sale {
                     font-size: 15px;
@@ -322,7 +325,7 @@
                 right: calc(0% + 13px);
                 width: 170px;
                 height: 200px;
-                border: 1px solid #fff;
+                border: 1px solid @color-fff;
 
                 &-sale {
                     font-size: 12px;
@@ -433,7 +436,7 @@
                 right: calc(0% + 7px);
                 width: 140px;
                 height: 170px;
-                border: 1px solid #fff;
+                border: 1px solid @color-fff;
 
                 &-sale {
                     font-size: 8px;
@@ -566,7 +569,7 @@
                 right: calc(0% + 12px);
                 width: 214px;
                 height: 260px;
-                border: 3px solid #fff;
+                border: 3px solid @color-fff;
 
                 &-sale {
                     font-size: 13px;
@@ -709,7 +712,7 @@
                 right: calc(0% + 10px);
                 width: 130px;
                 height: 158px;
-                border: 2px solid #fff;
+                border: 2px solid @color-fff;
 
                 &-sale {
                     font-size: 8px;
@@ -867,7 +870,7 @@
                     right: calc(0% + 11px);
                     width: 150px;
                     height: 184px;
-                    border: 1px solid #fff;
+                    border: 1px solid @color-fff;
     
                     &-sale {
                         font-size: 11px;
@@ -1027,7 +1030,7 @@
                     right: calc(0% + 9px);
                     width: 114px;
                     height: 138px;
-                    border: 1px solid #fff;
+                    border: 1px solid @color-fff;
     
                     &-sale {
                         font-size: 8px;

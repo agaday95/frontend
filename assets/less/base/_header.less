@@ -1,5 +1,5 @@
 .header-top {
-    background-image: url(/assets/images/banner.png);
+    background-image: url(../images/banner.png);
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -31,14 +31,14 @@
                 display: inline-block;
     
                 &:hover {
-                    color: #333;
+                    color: @color-333;
                 }
 
                 .count-cart {
                     position: absolute;
                     margin: 0;
-                    background: #fff;
-                    color: #333;
+                    background: @color-fff;
+                    color: @color-333;
                     border-radius: 50%;
                     height: 19px;
                     width: 19px;
@@ -54,12 +54,12 @@
                 font-size: 21px;
     
                 &:hover {
-                    color: #333;
+                    color: @color-333;
                 }
             }
     
             a {
-                color: #fff;
+                color: @color-fff;
             }
         }
     }
@@ -71,7 +71,7 @@
             font-size: 24px;
             letter-spacing: 12.7px;
             line-height: 32px;
-            color: #696969;
+            color: @color-696969;
             font-weight: 400;
             font-family: 'Fira Sans';
             margin-bottom: 31px;
@@ -83,7 +83,7 @@
             font-size: 100px;
             letter-spacing: 30px;
             line-height: 100px;
-            color: #333;
+            color: @color-333;
             font-weight: 600;
             font-style: italic;
             font-family: 'Cormorant Garamond';
@@ -95,12 +95,12 @@
             font-size: 16px;
             letter-spacing: 2.22px;
             line-height: 24px;
-            color: #fff;
+            color: @color-fff;
             font-weight: 700;
             font-family: 'Fira Sans';
             text-transform: uppercase;
             display: inline-block;
-            background-color: #333;
+            background-color: @color-333;
             text-decoration: none;
             padding: 12px 30px;
 
@@ -125,12 +125,12 @@
                 font-size: 24px;
                 letter-spacing: 2px;
                 line-height: 40px;
-                color: #fff;
+                color: @color-fff;
                 font-weight: 500;
                 font-family: 'Cormorant Garamond';
 
                 &:hover {
-                    color: #333;
+                    color: @color-333;
                 }
             }
         }
@@ -138,20 +138,20 @@
 
 }
 .header-bot {
-    border-bottom: 1px solid #efefef;
+    border-bottom: 1px solid @color-efefef;
    
     .menu-bot {
         height: 82px;
 
         .menu-col {
-                border-left: 1px solid #efefef;
+                border-left: 1px solid @color-efefef;
 
             .menu-col-title {
                 line-height: 28px;
                 text-align: center; 
                 font-size: 18px;
                 letter-spacing: 2px;            
-                color: #333;
+                color: @color-333;
                 font-weight: 700;
                 font-family: 'Cormorant Garamond';
                 text-transform: uppercase;
@@ -162,25 +162,26 @@
                 line-height: 28px;
                 text-align: center; 
                 font-size: 14px;
-                color: #ababab;
+                color: @color-ababab;
                 font-weight: 400;
                 font-family: 'Fira Sans';
-                margin-top: -18px;
+                margin-top: -17px;
                 margin-bottom: 9px;
             }
         }
 
         .menu-col:nth-child(1) {
-            transform: translate(1px, -1px);
+            transform: translate(1px, -2px);
         }
 
         .menu-col:nth-child(2) {
             transform: translate(2px, -2px);
+
         }
 
         .menu-col:nth-child(3) {
-            border-right: 1px solid #efefef;
-            transform: translate(-13px, -1px);
+            border-right: 1px solid @color-efefef;
+            transform: translate(-13px, -2px);
         }
     }
 }
@@ -757,7 +758,7 @@
     
             .menu-col {
                 border-left: none;
-                border-bottom: 1px solid #efefef;
+                border-bottom: 1px solid @color-efefef;
     
                 .menu-col-title {
                     line-height: 10px;
